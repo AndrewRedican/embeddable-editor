@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { action } from 'ts-action'
-import { MessageBroker, IChannelContract, actionSchema, filter } from '../assets/misc/window-messages'
+import { MessageBroker, IChannelContract, actionSchema, filter } from '../services/window-messages'
 
 enum InboundMessage {
   LoadContent = 'load content',
