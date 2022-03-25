@@ -1,0 +1,14 @@
+{
+    "id": "/action",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string"
+        },
+        "data": {
+            "type": "/v4"
+        }
+    },
+    "required": ["type"],
+    "additionalProperties": true
+}

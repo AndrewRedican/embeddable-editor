@@ -1,0 +1,20 @@
+{
+    "title": "contains at least one accepted action",
+    "type": "object",
+    "properties": {
+        "emitted": {
+            "type": "array",
+            "items": {
+                "$ref": "/action"
+            }
+        },
+        "accepted": {
+            "type": "array",
+            "items": {
+                "$ref": "/action"
+            }
+        }
+    },
+    "required": ["emitted", "accepted"],
+    "additionalProperties": false
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"validate-name.js","sourceRoot":"","sources":["../../../src/message-broker/validate-name/validate-name.ts"],"names":[],"mappings":";;;AAAO,IAAM,YAAY,GAAG,UAAC,IAAY;IACvC,IAAI,OAAO,IAAI,KAAK,QAAQ,IAAI,CAAC,IAAI,CAAC,MAAM,EAAE;QAC5C,MAAM,KAAK,CAAC,gCAAgC,CAAC,CAAC;KAC/C;AACH,CAAC,CAAC;AAJW,QAAA,YAAY,gBAIvB"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"get-last-item-in-map.js","sourceRoot":"","sources":["../../../src/utils/get-last-item-in-map/get-last-item-in-map.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAO,IAAM,eAAe,GAAG,UAAU,GAAgB;IACvD,IAAM,KAAK,4BAAO,GAAG,CAAC,IAAI,EAAE,SAAC,CAAC;IAC9B,OAAO,KAAK,CAAC,KAAK,CAAC,MAAM,GAAG,CAAC,CAAM,CAAC;AACtC,CAAC,CAAC;AAHW,QAAA,eAAe,mBAG1B"}
