@@ -1,6 +1,6 @@
 import { IEmailTemplate } from '@/typings';
 import { useForm, useFormState } from 'react-final-form';
-import { cloneDeep, isEqual } from 'lodash';
+import { cloneDeep, isEqual } from 'lodash-es';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 
 const MAX_RECORD_SIZE = 50;

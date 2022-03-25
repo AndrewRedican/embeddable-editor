@@ -11,7 +11,7 @@ import {
   NodeInstance,
   TreeProps,
 } from '@arco-design/web-react/es/Tree/interface';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import { transparentImage } from './transparentImage';
 
 interface TreeNode<T> {

@@ -7,7 +7,7 @@ import { useLoading } from '@demo/hooks/useLoading';
 import { Button, Message, PageHeader, Select } from '@arco-design/web-react';
 import { useQuery } from '@demo/hooks/useQuery';
 import { useHistory } from 'react-router-dom';
-import { cloneDeep, set, isEqual } from 'lodash';
+import { cloneDeep, set, isEqual } from 'lodash-es';
 import { Loading } from '@demo/components/loading';
 import mjml from 'mjml-browser';
 import { copy } from '@demo/utils/clipboard';

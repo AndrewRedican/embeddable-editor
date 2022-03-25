@@ -4,7 +4,7 @@ import { Field, FieldProps, useField } from 'react-final-form';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import styles from './index.module.scss';
 import { InputProps } from './Input';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 
 export interface EnhancerProps<T> extends Partial<FieldProps<T, any>> {
   name: string;

@@ -9,7 +9,7 @@ import {
   useRefState,
 } from 'easy-email-editor';
 import { BlockManager, getNodeIdxFromClassName } from 'easy-email-core';
-import { debounce, get } from 'lodash';
+import { debounce, get } from 'lodash-es';
 import { IBlockDataWithId } from '..';
 import { BlockTreeProps } from '../components/BlockTree';
 

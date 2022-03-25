@@ -1,6 +1,6 @@
 import { SYNC_SCROLL_ELEMENT_CLASS_NAME, useActiveTab } from '@';
 import { useDomScrollHeight } from '@/hooks/useDomScrollHeight';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 import React, { useState, useEffect, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 

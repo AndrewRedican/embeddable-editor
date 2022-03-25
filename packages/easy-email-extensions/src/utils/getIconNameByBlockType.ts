@@ -1,5 +1,5 @@
 import { BasicType, AdvancedType } from 'easy-email-core';
-import { get } from 'lodash';
+import { get } from 'lodash-es';
 
 const iconsMap = {
   [BasicType.TEXT]: 'icon-text',

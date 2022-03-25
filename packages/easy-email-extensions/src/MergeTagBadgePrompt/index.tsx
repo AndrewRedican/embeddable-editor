@@ -7,7 +7,7 @@ import {
   useRefState,
   getEditorRoot,
 } from 'easy-email-editor';
-import { get } from 'lodash';
+import { get } from 'lodash-es';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import stylesText from './MergeTagBadge.scss?inline';

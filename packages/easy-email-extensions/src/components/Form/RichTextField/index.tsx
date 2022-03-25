@@ -14,7 +14,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { InlineText, InlineTextProps } from '../InlineTextField';
 import { RichTextToolBar } from '../RichTextToolBar';
 import { Field, FieldInputProps } from 'react-final-form';
-import { debounce } from 'lodash';
+import { debounce } from 'lodash-es';
 
 export const RichTextField = (
   props: Omit<InlineTextProps, 'onChange' | 'mutators'>

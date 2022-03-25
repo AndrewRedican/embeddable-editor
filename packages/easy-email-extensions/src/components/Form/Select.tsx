@@ -2,7 +2,7 @@ import {
   Select as ArcoSelect,
   SelectProps as ArcoSelectProps,
 } from '@arco-design/web-react';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 import React from 'react';
 
 export interface SelectProps extends ArcoSelectProps {

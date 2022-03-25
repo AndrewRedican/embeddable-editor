@@ -1,7 +1,7 @@
 import { IBlockData } from '@core/typings';
 import { BasicType } from '@core/constants';
 import { createBlock } from '@core/utils/createBlock';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 
 export type IRaw = IBlockData<{}>;
 

@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as jsdom from 'jsdom';
-import { camelCase } from 'lodash';
+import { camelCase } from 'lodash-es';
 const { JSDOM } = jsdom;
 const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
 
@@ -20,7 +20,7 @@ BlockManager.getBlocks().forEach((item) => {
   const fileName = capitalizeFirstLetter(camelCase(item.type));
   const interfaceName = `I${fileName}`;
   const code = `
-  import { omit } from 'lodash';
+  import { omit } from 'lodash-es';
   import { BasicType } from '@core/constants';
   import { RecursivePartial } from '@core/typings';
   import React from 'react';

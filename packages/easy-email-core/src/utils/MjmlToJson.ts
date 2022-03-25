@@ -2,7 +2,7 @@ import { BlockManager } from '@core/utils';
 import { IPage } from '@core/blocks';
 import { BasicType } from '@core/constants';
 import { IBlockData } from '@core/typings';
-import { identity, isString, pickBy } from 'lodash';
+import { identity, isString, pickBy } from 'lodash-es';
 import { parseXMLtoBlock } from './parseXMLtoBlock';
 
 export function MjmlToJson(data: MjmlBlockItem | string): IPage {

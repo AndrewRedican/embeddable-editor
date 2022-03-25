@@ -3,7 +3,7 @@ import {
   Operator,
 } from '@core/blocks/advanced/generateAdvancedBlock';
 import { Template, Raw } from '@core/components';
-import { isNumber } from 'lodash';
+import { isNumber } from 'lodash-es';
 import React from 'react';
 import { nanoid } from 'nanoid';
 

@@ -3,7 +3,7 @@ import { isValidElement } from 'react';
 
 import { BasicType, AdvancedType, MERGE_TAG_CLASS_NAME } from '@core/constants';
 import { IBlockData } from '@core/typings';
-import { pickBy, identity, isObject, isBoolean, isString } from 'lodash';
+import { pickBy, identity, isObject, isBoolean, isString } from 'lodash-es';
 import {
   getChildIdx,
   getNodeIdxClassName,

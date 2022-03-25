@@ -1,7 +1,7 @@
 import { BlockManager } from '../BlockManager';
 import { BasicType } from '@core/constants';
 import { createCustomBlock } from '../createCustomBlock';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 import { Section, Column, Text, Image, Button } from '../../components';
 import { IBlockData } from '@core/typings';
 import React from 'react';

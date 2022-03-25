@@ -2,7 +2,7 @@ import React, { isValidElement, useMemo } from 'react';
 import { BlockManager, isValidBlockData } from '@core/utils';
 import { IBlockData, RecursivePartial } from '@core/typings';
 import { parseReactBlockToBlockData } from '@core/utils/parseReactBlockToBlockData';
-import { set } from 'lodash';
+import { set } from 'lodash-es';
 
 export type MjmlBlockChild = JSX.Element | IBlockData | string | null | false;
 

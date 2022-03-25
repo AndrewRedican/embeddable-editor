@@ -3,7 +3,7 @@ import { BasicType } from '@core/constants';
 import { IBlock, IBlockData } from '@core/typings';
 import { createCustomBlock } from '@core/utils/createCustomBlock';
 import { TemplateEngineManager } from '@core/utils';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 import React from 'react';
 import { IPage, standardBlocks } from '../standard';
 

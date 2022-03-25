@@ -7,7 +7,7 @@ import {
 
 import { CustomBlocksType } from '../constants';
 import React from 'react';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 import { getContentEditableClassName } from 'easy-email-editor';
 
 const { Column, Section, Wrapper, Text, Button, Image, Group } = components;

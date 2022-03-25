@@ -14,7 +14,7 @@ import {
   useEditorContext,
   useEditorProps,
 } from 'easy-email-editor';
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 
 export function SourceCodePanel() {

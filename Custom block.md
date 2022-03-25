@@ -35,7 +35,6 @@ And it can be reversed
 
 - `<mj-text>xxx</mj-text>` => `MjmlToJson` => `IText`
 
-
 ### Write a custom block
 
 A custom block should have the following structure
@@ -110,12 +109,12 @@ const render = (
 Another way is that you can write [MJML](https://documentation.mjml.io/).
 
 ```ts
-import { MjmlToJson } from 'easy-email-editor';
+import { MjmlToJson } from "easy-email-editor";
 
 const render = (
   data: ICustomButton,
   idx: string,
-  mode: 'testing' | 'production',
+  mode: "testing" | "production",
   context?: IPage,
   dataSource?: { [key: string]: any }
 ) => {
@@ -123,16 +122,15 @@ const render = (
   const { buttonText } = data.data.value;
 
   const instance = MjmlToJson(
-    `<mj-button background-color=${attributes['background-color']}>${buttonText}</mj-button>`
+    `<mj-button background-color=${attributes["background-color"]}>${buttonText}</mj-button>`
   );
 
   return instance;
 };
-
-
 ```
 
 ### Register this block
+
 Only after registering this block, mjml-parser can convert it into basic blocks
 
 ```ts
@@ -142,7 +140,8 @@ BlocksMap.registerBlocks({ "block-name": YourCustomBlock });
 ```
 
 ### View demo
- [https://github.com/m-Ryan/easy-email-demo/tree/main/src/CustomBlocks](https://github.com/m-Ryan/easy-email-demo/tree/main/src/CustomBlocks)
+
+[https://github.com/m-Ryan/easy-email-demo/tree/main/src/CustomBlocks](https://github.com/m-Ryan/easy-email-demo/tree/main/src/CustomBlocks)
 
 <br/>
 <br/>
@@ -155,22 +154,22 @@ import {
   BasicType,
   components,
   createCustomBlock,
-} from 'easy-email-core';
+} from "easy-email-core";
 
-import { CustomBlocksType } from '../constants';
-import React from 'react';
-import { merge } from 'lodash';
+import { CustomBlocksType } from "../constants";
+import React from "react";
+import { merge } from "lodash-es";
 
 const { Column, Section, Wrapper, Text, Button, Image, Group } = components;
 
 export type IProductRecommendation = IBlockData<
   {
-    'background-color': string;
-    'button-color': string;
-    'button-text-color': string;
-    'product-name-color': string;
-    'product-price-color': string;
-    'title-color': string;
+    "background-color": string;
+    "button-color": string;
+    "button-text-color": string;
+    "product-name-color": string;
+    "product-price-color": string;
+    "title-color": string;
   },
   {
     title: string;
@@ -181,14 +180,14 @@ export type IProductRecommendation = IBlockData<
 
 const productPlaceholder = {
   image:
-    'https://assets.maocanhua.cn/8e0e07e2-3f84-4426-84c1-2add355c558b-image.png',
-  title: 'Red Flock Buckle Winter Boots',
-  price: '$59.99 HKD',
-  url: 'https://easy-email-m-ryan.vercel.app',
+    "https://assets.maocanhua.cn/8e0e07e2-3f84-4426-84c1-2add355c558b-image.png",
+  title: "Red Flock Buckle Winter Boots",
+  price: "$59.99 HKD",
+  url: "https://easy-email-m-ryan.vercel.app",
 };
 
 export const ProductRecommendation = createCustomBlock<IProductRecommendation>({
-  name: 'Product recommendation',
+  name: "Product recommendation",
   type: CustomBlocksType.PRODUCT_RECOMMENDATION,
   validParentType: [BasicType.PAGE],
   create: (payload) => {
@@ -196,18 +195,18 @@ export const ProductRecommendation = createCustomBlock<IProductRecommendation>({
       type: CustomBlocksType.PRODUCT_RECOMMENDATION,
       data: {
         value: {
-          title: 'You might also like',
-          buttonText: 'Buy now',
+          title: "You might also like",
+          buttonText: "Buy now",
           quantity: 3,
         },
       },
       attributes: {
-        'background-color': '#ffffff',
-        'button-text-color': '#ffffff',
-        'button-color': '#414141',
-        'product-name-color': '#414141',
-        'product-price-color': '#414141',
-        'title-color': '#222222',
+        "background-color": "#ffffff",
+        "button-text-color": "#ffffff",
+        "button-color": "#414141",
+        "product-name-color": "#414141",
+        "product-price-color": "#414141",
+        "title-color": "#222222",
       },
       children: [
         {
@@ -215,7 +214,7 @@ export const ProductRecommendation = createCustomBlock<IProductRecommendation>({
           children: [],
           data: {
             value: {
-              content: 'custom block title',
+              content: "custom block title",
             },
           },
           attributes: {},
@@ -229,79 +228,79 @@ export const ProductRecommendation = createCustomBlock<IProductRecommendation>({
     const attributes = data.attributes;
 
     const productList =
-      mode === 'testing'
+      mode === "testing"
         ? new Array(quantity).fill(productPlaceholder)
         : (dataSource?.product_list || []).slice(0, quantity);
 
-    const perWidth = quantity <= 3 ? '' : '33.33%';
+    const perWidth = quantity <= 3 ? "" : "33.33%";
 
     return (
       <Wrapper
-        padding='20px 0px 20px 0px'
-        border='none'
-        direction='ltr'
-        text-align='center'
-        background-color={attributes['background-color']}
+        padding="20px 0px 20px 0px"
+        border="none"
+        direction="ltr"
+        text-align="center"
+        background-color={attributes["background-color"]}
       >
-        <Section padding='0px'>
-          <Column padding='0px' border='none' vertical-align='top'>
+        <Section padding="0px">
+          <Column padding="0px" border="none" vertical-align="top">
             <Text
-              font-size='20px'
-              padding='10px 25px 10px 25px'
-              line-height='1'
-              align='center'
-              font-weight='bold'
-              color={attributes['title-color']}
+              font-size="20px"
+              padding="10px 25px 10px 25px"
+              line-height="1"
+              align="center"
+              font-weight="bold"
+              color={attributes["title-color"]}
             >
               {title}
             </Text>
           </Column>
         </Section>
 
-        <Section padding='0px'>
-          <Group vertical-align='top' direction='ltr'>
+        <Section padding="0px">
+          <Group vertical-align="top" direction="ltr">
             {productList.map((item, index) => (
               <Column
                 key={index}
                 width={perWidth}
-                padding='0px'
-                border='none'
-                vertical-align='top'
+                padding="0px"
+                border="none"
+                vertical-align="top"
               >
                 <Image
-                  align='center'
-                  height='auto'
-                  padding='10px'
-                  width='150px'
+                  align="center"
+                  height="auto"
+                  padding="10px"
+                  width="150px"
                   src={item.image}
                 />
                 <Text
-                  font-size='12px'
-                  padding='10px 0px 10px 0px '
-                  line-height='1'
-                  align='center'
-                  color={attributes['product-name-color']}
+                  font-size="12px"
+                  padding="10px 0px 10px 0px "
+                  line-height="1"
+                  align="center"
+                  color={attributes["product-name-color"]}
                 >
                   {item.title}
                 </Text>
                 <Text
-                  font-size='12px'
-                  padding='0px'
-                  line-height='1'
-                  align='center'
-                  color={attributes['product-price-color']}
+                  font-size="12px"
+                  padding="0px"
+                  line-height="1"
+                  align="center"
+                  color={attributes["product-price-color"]}
                 >
                   {item.price}
                 </Text>
                 <Button
-                  align='center'
-                  padding='15px 0px'
-                  background-color={attributes['button-color']}
-                  color={attributes['button-text-color']}
-                  target='_blank'
-                  vertical-align='middle'
-                  border='none'
-                  text-align='center'
+                  align="center"
+                  padding="15px 0px"
+                  background-color={attributes["button-color"]}
+                  color={attributes["button-text-color"]}
+                  target="_blank"
+                  vertical-align="middle"
+                  border="none"
+                  text-align="center"
                   href={item.url}
                 >
                   {buttonText}
@@ -315,10 +314,5 @@ export const ProductRecommendation = createCustomBlock<IProductRecommendation>({
   },
 });
 
-export { Panel } from './Panel';
-
-
-
+export { Panel } from "./Panel";
 ```
-
-

@@ -1,4 +1,4 @@
-import { flatMap, isArray, omit } from 'lodash';
+import { flatMap, isArray, omit } from 'lodash-es';
 import { BasicType } from '@core/constants';
 import { IBlockData, RecursivePartial } from '@core/typings';
 import React from 'react';

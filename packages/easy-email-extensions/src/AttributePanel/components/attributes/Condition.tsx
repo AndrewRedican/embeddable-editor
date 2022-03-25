@@ -3,7 +3,7 @@ import { AdvancedBlock, OperatorSymbol, AdvancedType, Operator, ICondition, ICon
 import { Collapse, Grid, Switch, Button, Space, List, Message } from '@arco-design/web-react';
 import { SelectField, TextField } from '@extensions/components/Form';
 import React, { useCallback } from 'react';
-import { cloneDeep, get, upperFirst } from 'lodash';
+import { cloneDeep, get, upperFirst } from 'lodash-es';
 import { IconDelete, IconPlus } from '@arco-design/web-react/icon';
 import { useField } from 'react-final-form';
 

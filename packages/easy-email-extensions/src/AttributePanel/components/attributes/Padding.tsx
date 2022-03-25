@@ -4,7 +4,7 @@ import { useFocusIdx, Stack, useBlock, TextStyle } from 'easy-email-editor';
 import { createBlockDataByType } from 'easy-email-core';
 import { Form, useFormState } from 'react-final-form';
 import { Grid } from '@arco-design/web-react';
-import { get } from 'lodash';
+import { get } from 'lodash-es';
 
 export interface PaddingProps {
   title?: string;

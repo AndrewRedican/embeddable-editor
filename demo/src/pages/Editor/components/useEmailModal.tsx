@@ -12,7 +12,7 @@ import { useCallback } from 'react';
 import { pushEvent } from '@demo/utils/pushEvent';
 import mustache from 'mustache';
 import { CustomBlocksType } from './CustomBlocks/constants';
-import { cloneDeep, merge } from 'lodash';
+import { cloneDeep, merge } from 'lodash-es';
 import { TextAreaField, TextField } from 'easy-email-extensions';
 
 const schema = Yup.object().shape({

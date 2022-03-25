@@ -21,7 +21,7 @@ import {
   IBlockData,
 } from 'easy-email-core';
 import styles from './index.module.scss';
-import { cloneDeep, get, isString } from 'lodash';
+import { cloneDeep, get, isString } from 'lodash-es';
 import { EyeIcon } from './components/EyeIcon';
 import { BlockTree, BlockTreeProps } from './components/BlockTree';
 import { ContextMenu } from './components/ContextMenu';
@@ -33,7 +33,7 @@ import {
 import { getIconNameByBlockType } from '@extensions/utils/getIconNameByBlockType';
 import { Space } from '@arco-design/web-react';
 import { getBlockTitle } from '@extensions/utils/getBlockTitle';
-import { isEqual } from 'lodash';
+import { isEqual } from 'lodash-es';
 
 export interface IBlockDataWithId extends IBlockData {
   id: string;

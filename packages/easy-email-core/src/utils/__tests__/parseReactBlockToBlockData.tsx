@@ -3,7 +3,7 @@ import { parseReactBlockToBlockData } from '../parseReactBlockToBlockData';
 import * as componentsMap from '../../components';
 import { BlockManager } from '../BlockManager';
 import { BasicType } from '@core/constants';
-import { kebabCase, snakeCase } from 'lodash';
+import { kebabCase, snakeCase } from 'lodash-es';
 
 describe('Test parseXml', () => {
   const componentNames = Object.keys(componentsMap).filter(item => item !== 'MjmlBlock');

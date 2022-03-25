@@ -2,7 +2,7 @@ import { IBlock, IBlockData } from '@core/typings';
 import { BasicType } from '@core/constants';
 import { CSSProperties } from 'react';
 import { createBlock } from '@core/utils/createBlock';
-import { merge } from 'lodash';
+import { merge } from 'lodash-es';
 import { getImg } from '@core/utils/getImg';
 
 export type IImage = IBlockData<{

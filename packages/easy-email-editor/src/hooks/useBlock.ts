@@ -1,5 +1,5 @@
 import { BasicType } from 'easy-email-core';
-import { cloneDeep, debounce, get } from 'lodash';
+import { cloneDeep, debounce, get } from 'lodash-es';
 import { useCallback, useContext } from 'react';
 import {
   IBlockData,
